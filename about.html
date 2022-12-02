@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fictional Univesity</title>
+        <!-- to make the website good with any device -->
+        <meta name ="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    </head>
+    <body>
+        <section class="sub-header">
+            <!-- what is nav? defines a set of navigation links. -->
+            <nav>
+                <a hraf="index.html"><img src ="images/logo.png" alt ="logo here"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">COURSES</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">TESTIMONIALS</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">TERMS</a></li>
+                        <li><a href="">PRIVACY POLICY</a></li>
+                        <li><a href="">FAQ</a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+
+        </section>
+
+        <!-- -----------About us content--------- -->
+        <section class="about-us">
+
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the World's largest university</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro in provident similique molestiae, sint distinctio, recusandae, soluta cupiditate maiores praesentium voluptas eius natus delectus ipsum rem rerum obcaecati possimus amet!</p>
+                    <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpg">
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- ---------Footer--------- -->
+        <section class="footer">
+            <h4>About US</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Alias nam earum placeat laborum,<br> excepturi quo velit provident quod.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by MU Ladies</p>
+        </section>
+
+        <!-- -----JavaScript for Toggle Menu----- -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";  
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>

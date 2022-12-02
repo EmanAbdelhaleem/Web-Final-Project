@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fictional Univesity</title>
+        <!-- to make the website good with any device -->
+        <meta name ="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    </head>
+    <body>
+        <section class="sub-header">
+            <!-- what is nav? defines a set of navigation links. -->
+            <nav>
+                <a hraf="index.html"><img src ="images/logo.png" alt ="logo here"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">COURSES</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">TERMS</a></li>
+                        <li><a href="">PRIVACY POLICY</a></li>
+                        <li><a href="">FAQ</a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Certifiates & Online programs for 2023</h1>
+
+        </section>
+
+        <!-- ---------blog page content--------- -->
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg">
+                 <h2>Our Certifiates & Online programs for 2023</h2>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid maxime cumque eveniet cupiditate molestiae, explicabo perferendis voluptatum, similique id natus suscipit laboriosam? Obcaecati suscipit fuga aut repellendus in magnam tempore.</p>
+                 <br>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid maxime cumque eveniet cupiditate molestiae, explicabo perferendis voluptatum, similique id natus suscipit laboriosam? Obcaecati suscipit fuga aut repellendus in magnam tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Alias nam earum placeat laborum,<br> excepturi quo velit provident quod.</p>
+                 <br>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid maxime cumque eveniet cupiditate molestiae, explicabo perferendis voluptatum, similique id natus suscipit laboriosam? Obcaecati suscipit fuga aut repellendus in magnam tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Alias nam earum placeat laborum,<br> excepturi quo velit provident quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Alias nam earum placeat laborum,<br> excepturi quo velit provident quod.</p>
+                 <br>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid maxime cumque eveniet cupiditate molestiae, explicabo perferendis voluptatum, similique id natus suscipit laboriosam? Obcaecati suscipit fuga aut repellendus in magnam tempore.</p>
+                    
+                   <div class="comment-box">
+                       
+                       <h3>Leave a Comment</h3>
+                    
+                       <form class="comment-form">
+                              <input type="text" placeholder="Enter Name">
+                              <input type="email" placeholder="Enter Email">
+                              <textarea rows="5" placeholder="Your comment">
+                              </textarea>
+                              <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                              
+                </div> 
+        
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytic</span>
+                        <span>23</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>31</span>
+                    </div>
+                    <div>
+                        <span>Machine learning</span>
+                        <span>19</span>
+                    </div>
+                    <div>
+                        <span>computer science</span>
+                        <span>43</span>
+                    </div>
+                    <div>
+                        <span>AutoCAD</span>
+                        <span>45</span>
+                    </div>
+                    <div>
+                        <span>Journalism</span>
+                        <span>23</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>16</span>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- ---------Footer--------- -->
+        <section class="footer">
+            <h4>About US</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Alias nam earum placeat laborum,<br> excepturi quo velit provident quod.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by MU Ladies</p>
+        </section>
+
+        <!-- -----JavaScript for Toggle Menu----- -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";  
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>

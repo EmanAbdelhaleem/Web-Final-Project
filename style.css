@@ -503,3 +503,37 @@ h3{
         font-size: 24px;
     }
 }
+
+/* ----------Privacy Policy----------- */
+
+.priv{
+    flex-basis: 70%;
+    margin: 60px auto 30px;
+}
+
+.priv h2{
+    padding-left: 5px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    opacity: 0.9;
+    margin-top: 10px;
+
+}
+
+.priv h1{
+    padding-left: 5px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(32, 27, 27);
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.priv p{
+    margin: 0px 8px;
+}
+
+.image{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/privacy2.jpg);
+}

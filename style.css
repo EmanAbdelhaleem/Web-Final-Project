@@ -537,3 +537,173 @@ h3{
 .image{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/privacy2.jpg);
 }
+
+/* -----------FAQ------------ */
+
+.container{
+    /* background: #eee; */
+    padding-top: 20px;
+    font-family: monospace;
+  }
+  .faq-header{
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 0px;
+    background: rgb(133, 54, 54);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .faq-item{
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .faq-body{
+    display: none;
+    margin-top: 30px;
+  }
+  .faq-wrapper{
+    width: 75%;
+    margin: 0 auto;
+  }
+  .faq-inner{
+    padding: 30px;
+    background: aliceblue;
+  }
+  .faq-plus{
+    float: right;
+    font-size: 1.4em;
+    line-height: 1em;
+    cursor: pointer;
+  }
+  hr{
+    background-color: #9b9b9b;
+  }
+
+  /* ---------Contact----------- */
+  .location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+width: 80%;
+margin: auto;
+
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* -----------Terms----------- */
+
+  .terms-box{
+    max-width: 460px;
+    background-color:  #1a1a4e/*#ca7676*/;
+    color: #fff;
+    font-family: "Montserrat";
+    border-radius: 10px;
+    padding: 60px 30px;
+    margin: 100px auto 30px;
+  }
+  
+  .terms-text{
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #f1f1f1;
+  }
+  
+  .terms-text::-webkit-scrollbar{
+    width: 2px;
+    background-color: #282828;
+  }
+  
+  .terms-text::-webkit-scrollbar-thumb{
+    background-color: #d13639;
+  }
+  
+  .terms-text h2{
+    text-transform: uppercase;
+  }
+  
+  .terms-box h4{
+    font-size: 13px;
+    text-align: center;
+    padding: 0 40px;
+  }
+  
+  .terms-box h4 span{
+    color: #d13639;
+  }
+  
+  .buttons{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+  
+  .btn{
+    height: 50px;
+    width: calc(50% - 6px);
+    border: 0;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    transition: .3s  linear;
+    cursor: pointer;
+  }
+  
+  .black-btn{
+    background-color: black;
+  }
+  
+  .gray-btn{
+    background-color: #6e6b6b;
+  }
+  
+  .btn:hover{
+    opacity: .6;
+  }
+
+.terms-box p{
+    color: white;
+}

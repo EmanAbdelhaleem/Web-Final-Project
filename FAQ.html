@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fictional Univesity</title>
+        <!-- to make the website good with any device -->
+        <meta name ="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <section class="sub-header image">
+            <!-- what is nav? defines a set of navigation links. -->
+            <nav>
+                <a hraf="index.html"><img src ="images/logo.png" alt ="logo here"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="courses.html">COURSES</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="terms.html">TERMS</a></li>
+                        <li><a href="privacy.html">PRIVACY POLICY</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Frequently Asked Questions</h1>
+
+        </section>
+
+        <!-- -----------FAQ content--------- -->
+        <div class="container">
+            <div class="row">
+              <div class="faq-wrapper">
+                <div class="faq-header">
+                  <h1>FAQs</h1>
+                </div>
+                <div class="faq-inner">
+                  <div class="faq-item">
+                    <h3>
+                      Where is this University ?
+                      <span class="faq-plus">&plus;</span>
+                    </h3>
+                    <div class="faq-body">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="faq-item">
+                    <h3>
+                      What can I study in it ?
+                      <span class="faq-plus">&plus;</span>
+                    </h3>
+                    <div class="faq-body">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="faq-item">
+                    <h3>
+                      How long did it take ?
+                      <span class="faq-plus">&plus;</span>
+                    </h3>
+                    <div class="faq-body">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="faq-item">
+                    <h3>
+                      Is it allowed for students over 22 ?
+                      <span class="faq-plus">&plus;</span>
+                    </h3>
+                    <div class="faq-body">
+      
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="faq-item">
+                    <h3>
+                     How much does each Course cost ?
+                      <span class="faq-plus">&plus;</span>
+                    </h3>
+                    <div class="faq-body">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">
+            $(".faq-plus").on('click',function(){
+              $(this).parent().parent().find('.faq-body').slideToggle();
+            });
+          </script>
+
+        <!-- ---------Footer--------- -->
+        <section class="footer">
+            <h4>About US</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Alias nam earum placeat laborum,<br> excepturi quo velit provident quod.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by MU Ladies</p>
+        </section>
+
+        <!-- -----JavaScript for Toggle Menu----- -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";  
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
